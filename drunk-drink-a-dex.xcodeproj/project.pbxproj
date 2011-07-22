@@ -1,0 +1,480 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DD974B7C13D9BFEF00B12572 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD974B7B13D9BFEF00B12572 /* UIKit.framework */; };
+		DD974B7E13D9BFEF00B12572 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD974B7D13D9BFEF00B12572 /* Foundation.framework */; };
+		DD974B8013D9BFEF00B12572 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD974B7F13D9BFEF00B12572 /* CoreGraphics.framework */; };
+		DD974B8213D9BFEF00B12572 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD974B8113D9BFEF00B12572 /* CoreData.framework */; };
+		DD974B8813D9BFEF00B12572 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DD974B8613D9BFEF00B12572 /* InfoPlist.strings */; };
+		DD974B8A13D9BFEF00B12572 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD974B8913D9BFEF00B12572 /* main.m */; };
+		DD974B8E13D9BFEF00B12572 /* drunk_drink_a_dexAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD974B8D13D9BFEF00B12572 /* drunk_drink_a_dexAppDelegate.m */; };
+		DD974B9113D9BFEF00B12572 /* drunk_drink_a_dex.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD974B8F13D9BFEF00B12572 /* drunk_drink_a_dex.xcdatamodeld */; };
+		DD974B9413D9BFEF00B12572 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD974B9213D9BFEF00B12572 /* MainWindow.xib */; };
+		DD974B9713D9BFEF00B12572 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD974B9613D9BFEF00B12572 /* MainViewController.m */; };
+		DD974B9913D9BFEF00B12572 /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD974B9813D9BFEF00B12572 /* MainView.xib */; };
+		DD974B9C13D9BFEF00B12572 /* FlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD974B9B13D9BFEF00B12572 /* FlipsideViewController.m */; };
+		DD974B9E13D9BFF000B12572 /* FlipsideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD974B9D13D9BFF000B12572 /* FlipsideView.xib */; };
+		DD974BA613D9BFF000B12572 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD974BA513D9BFF000B12572 /* SenTestingKit.framework */; };
+		DD974BA713D9BFF000B12572 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD974B7B13D9BFEF00B12572 /* UIKit.framework */; };
+		DD974BA813D9BFF000B12572 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD974B7D13D9BFEF00B12572 /* Foundation.framework */; };
+		DD974BA913D9BFF000B12572 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD974B7F13D9BFEF00B12572 /* CoreGraphics.framework */; };
+		DD974BAA13D9BFF000B12572 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD974B8113D9BFEF00B12572 /* CoreData.framework */; };
+		DD974BB213D9BFF000B12572 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DD974BB013D9BFF000B12572 /* InfoPlist.strings */; };
+		DD974BB413D9BFF000B12572 /* drunk_drink_a_dexTests.h in Resources */ = {isa = PBXBuildFile; fileRef = DD974BB313D9BFF000B12572 /* drunk_drink_a_dexTests.h */; };
+		DD974BB613D9BFF000B12572 /* drunk_drink_a_dexTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD974BB513D9BFF000B12572 /* drunk_drink_a_dexTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DD974BAB13D9BFF000B12572 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD974B6E13D9BFEF00B12572 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD974B7613D9BFEF00B12572;
+			remoteInfo = "drunk-drink-a-dex";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DD974B7713D9BFEF00B12572 /* drunk-drink-a-dex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "drunk-drink-a-dex.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD974B7B13D9BFEF00B12572 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DD974B7D13D9BFEF00B12572 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DD974B7F13D9BFEF00B12572 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DD974B8113D9BFEF00B12572 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		DD974B8513D9BFEF00B12572 /* drunk-drink-a-dex-Info.plist */ = {isa = PBXFileReference; path = "drunk-drink-a-dex-Info.plist"; sourceTree = "<group>"; };
+		DD974B8713D9BFEF00B12572 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DD974B8913D9BFEF00B12572 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DD974B8B13D9BFEF00B12572 /* drunk-drink-a-dex-Prefix.pch */ = {isa = PBXFileReference; path = "drunk-drink-a-dex-Prefix.pch"; sourceTree = "<group>"; };
+		DD974B8C13D9BFEF00B12572 /* drunk_drink_a_dexAppDelegate.h */ = {isa = PBXFileReference; path = drunk_drink_a_dexAppDelegate.h; sourceTree = "<group>"; };
+		DD974B8D13D9BFEF00B12572 /* drunk_drink_a_dexAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = drunk_drink_a_dexAppDelegate.m; sourceTree = "<group>"; };
+		DD974B9013D9BFEF00B12572 /* drunk_drink_a_dex.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = drunk_drink_a_dex.xcdatamodel; sourceTree = "<group>"; };
+		DD974B9313D9BFEF00B12572 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		DD974B9513D9BFEF00B12572 /* MainViewController.h */ = {isa = PBXFileReference; path = MainViewController.h; sourceTree = "<group>"; };
+		DD974B9613D9BFEF00B12572 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		DD974B9813D9BFEF00B12572 /* MainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
+		DD974B9A13D9BFEF00B12572 /* FlipsideViewController.h */ = {isa = PBXFileReference; path = FlipsideViewController.h; sourceTree = "<group>"; };
+		DD974B9B13D9BFEF00B12572 /* FlipsideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlipsideViewController.m; sourceTree = "<group>"; };
+		DD974B9D13D9BFF000B12572 /* FlipsideView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlipsideView.xib; sourceTree = "<group>"; };
+		DD974BA413D9BFF000B12572 /* drunk-drink-a-dexTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "drunk-drink-a-dexTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD974BA513D9BFF000B12572 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		DD974BAF13D9BFF000B12572 /* drunk-drink-a-dexTests-Info.plist */ = {isa = PBXFileReference; path = "drunk-drink-a-dexTests-Info.plist"; sourceTree = "<group>"; };
+		DD974BB113D9BFF000B12572 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DD974BB313D9BFF000B12572 /* drunk_drink_a_dexTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = drunk_drink_a_dexTests.h; sourceTree = "<group>"; };
+		DD974BB513D9BFF000B12572 /* drunk_drink_a_dexTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = drunk_drink_a_dexTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD974B7413D9BFEF00B12572 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD974B7C13D9BFEF00B12572 /* UIKit.framework in Frameworks */,
+				DD974B7E13D9BFEF00B12572 /* Foundation.framework in Frameworks */,
+				DD974B8013D9BFEF00B12572 /* CoreGraphics.framework in Frameworks */,
+				DD974B8213D9BFEF00B12572 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD974BA013D9BFF000B12572 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD974BA613D9BFF000B12572 /* SenTestingKit.framework in Frameworks */,
+				DD974BA713D9BFF000B12572 /* UIKit.framework in Frameworks */,
+				DD974BA813D9BFF000B12572 /* Foundation.framework in Frameworks */,
+				DD974BA913D9BFF000B12572 /* CoreGraphics.framework in Frameworks */,
+				DD974BAA13D9BFF000B12572 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DD974B6C13D9BFEF00B12572 = {
+			isa = PBXGroup;
+			children = (
+				DD974B8313D9BFEF00B12572 /* drunk-drink-a-dex */,
+				DD974BAD13D9BFF000B12572 /* drunk-drink-a-dexTests */,
+				DD974B7A13D9BFEF00B12572 /* Frameworks */,
+				DD974B7813D9BFEF00B12572 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DD974B7813D9BFEF00B12572 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD974B7713D9BFEF00B12572 /* drunk-drink-a-dex.app */,
+				DD974BA413D9BFF000B12572 /* drunk-drink-a-dexTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD974B7A13D9BFEF00B12572 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD974B7B13D9BFEF00B12572 /* UIKit.framework */,
+				DD974B7D13D9BFEF00B12572 /* Foundation.framework */,
+				DD974B7F13D9BFEF00B12572 /* CoreGraphics.framework */,
+				DD974B8113D9BFEF00B12572 /* CoreData.framework */,
+				DD974BA513D9BFF000B12572 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD974B8313D9BFEF00B12572 /* drunk-drink-a-dex */ = {
+			isa = PBXGroup;
+			children = (
+				DD974B8C13D9BFEF00B12572 /* drunk_drink_a_dexAppDelegate.h */,
+				DD974B8D13D9BFEF00B12572 /* drunk_drink_a_dexAppDelegate.m */,
+				DD974B9213D9BFEF00B12572 /* MainWindow.xib */,
+				DD974B9513D9BFEF00B12572 /* MainViewController.h */,
+				DD974B9613D9BFEF00B12572 /* MainViewController.m */,
+				DD974B9813D9BFEF00B12572 /* MainView.xib */,
+				DD974B9A13D9BFEF00B12572 /* FlipsideViewController.h */,
+				DD974B9B13D9BFEF00B12572 /* FlipsideViewController.m */,
+				DD974B9D13D9BFF000B12572 /* FlipsideView.xib */,
+				DD974B8F13D9BFEF00B12572 /* drunk_drink_a_dex.xcdatamodeld */,
+				DD974B8413D9BFEF00B12572 /* Supporting Files */,
+			);
+			path = "drunk-drink-a-dex";
+			sourceTree = "<group>";
+		};
+		DD974B8413D9BFEF00B12572 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DD974B8513D9BFEF00B12572 /* drunk-drink-a-dex-Info.plist */,
+				DD974B8613D9BFEF00B12572 /* InfoPlist.strings */,
+				DD974B8913D9BFEF00B12572 /* main.m */,
+				DD974B8B13D9BFEF00B12572 /* drunk-drink-a-dex-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DD974BAD13D9BFF000B12572 /* drunk-drink-a-dexTests */ = {
+			isa = PBXGroup;
+			children = (
+				DD974BB313D9BFF000B12572 /* drunk_drink_a_dexTests.h */,
+				DD974BB513D9BFF000B12572 /* drunk_drink_a_dexTests.m */,
+				DD974BAE13D9BFF000B12572 /* Supporting Files */,
+			);
+			path = "drunk-drink-a-dexTests";
+			sourceTree = "<group>";
+		};
+		DD974BAE13D9BFF000B12572 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DD974BAF13D9BFF000B12572 /* drunk-drink-a-dexTests-Info.plist */,
+				DD974BB013D9BFF000B12572 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD974B7613D9BFEF00B12572 /* drunk-drink-a-dex */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD974BB913D9BFF000B12572 /* Build configuration list for PBXNativeTarget "drunk-drink-a-dex" */;
+			buildPhases = (
+				DD974B7313D9BFEF00B12572 /* Sources */,
+				DD974B7413D9BFEF00B12572 /* Frameworks */,
+				DD974B7513D9BFEF00B12572 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "drunk-drink-a-dex";
+			productName = "drunk-drink-a-dex";
+			productReference = DD974B7713D9BFEF00B12572 /* drunk-drink-a-dex.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DD974BA313D9BFF000B12572 /* drunk-drink-a-dexTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD974BBC13D9BFF000B12572 /* Build configuration list for PBXNativeTarget "drunk-drink-a-dexTests" */;
+			buildPhases = (
+				DD974B9F13D9BFF000B12572 /* Sources */,
+				DD974BA013D9BFF000B12572 /* Frameworks */,
+				DD974BA113D9BFF000B12572 /* Resources */,
+				DD974BA213D9BFF000B12572 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD974BAC13D9BFF000B12572 /* PBXTargetDependency */,
+			);
+			name = "drunk-drink-a-dexTests";
+			productName = "drunk-drink-a-dexTests";
+			productReference = DD974BA413D9BFF000B12572 /* drunk-drink-a-dexTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD974B6E13D9BFEF00B12572 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = DD974B7113D9BFEF00B12572 /* Build configuration list for PBXProject "drunk-drink-a-dex" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DD974B6C13D9BFEF00B12572;
+			productRefGroup = DD974B7813D9BFEF00B12572 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD974B7613D9BFEF00B12572 /* drunk-drink-a-dex */,
+				DD974BA313D9BFF000B12572 /* drunk-drink-a-dexTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD974B7513D9BFEF00B12572 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD974B8813D9BFEF00B12572 /* InfoPlist.strings in Resources */,
+				DD974B9413D9BFEF00B12572 /* MainWindow.xib in Resources */,
+				DD974B9913D9BFEF00B12572 /* MainView.xib in Resources */,
+				DD974B9E13D9BFF000B12572 /* FlipsideView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD974BA113D9BFF000B12572 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD974BB213D9BFF000B12572 /* InfoPlist.strings in Resources */,
+				DD974BB413D9BFF000B12572 /* drunk_drink_a_dexTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DD974BA213D9BFF000B12572 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD974B7313D9BFEF00B12572 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD974B8A13D9BFEF00B12572 /* main.m in Sources */,
+				DD974B8E13D9BFEF00B12572 /* drunk_drink_a_dexAppDelegate.m in Sources */,
+				DD974B9113D9BFEF00B12572 /* drunk_drink_a_dex.xcdatamodeld in Sources */,
+				DD974B9713D9BFEF00B12572 /* MainViewController.m in Sources */,
+				DD974B9C13D9BFEF00B12572 /* FlipsideViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD974B9F13D9BFF000B12572 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD974BB613D9BFF000B12572 /* drunk_drink_a_dexTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DD974BAC13D9BFF000B12572 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD974B7613D9BFEF00B12572 /* drunk-drink-a-dex */;
+			targetProxy = DD974BAB13D9BFF000B12572 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DD974B8613D9BFEF00B12572 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD974B8713D9BFEF00B12572 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DD974B9213D9BFEF00B12572 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD974B9313D9BFEF00B12572 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		DD974BB013D9BFF000B12572 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD974BB113D9BFF000B12572 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DD974BB713D9BFF000B12572 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DD974BB813D9BFF000B12572 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DD974BBA13D9BFF000B12572 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "drunk-drink-a-dex/drunk-drink-a-dex-Prefix.pch";
+				INFOPLIST_FILE = "drunk-drink-a-dex/drunk-drink-a-dex-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DD974BBB13D9BFF000B12572 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "drunk-drink-a-dex/drunk-drink-a-dex-Prefix.pch";
+				INFOPLIST_FILE = "drunk-drink-a-dex/drunk-drink-a-dex-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		DD974BBD13D9BFF000B12572 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/drunk-drink-a-dex.app/drunk-drink-a-dex";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "drunk-drink-a-dex/drunk-drink-a-dex-Prefix.pch";
+				INFOPLIST_FILE = "drunk-drink-a-dexTests/drunk-drink-a-dexTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		DD974BBE13D9BFF000B12572 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/drunk-drink-a-dex.app/drunk-drink-a-dex";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "drunk-drink-a-dex/drunk-drink-a-dex-Prefix.pch";
+				INFOPLIST_FILE = "drunk-drink-a-dexTests/drunk-drink-a-dexTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD974B7113D9BFEF00B12572 /* Build configuration list for PBXProject "drunk-drink-a-dex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD974BB713D9BFF000B12572 /* Debug */,
+				DD974BB813D9BFF000B12572 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD974BB913D9BFF000B12572 /* Build configuration list for PBXNativeTarget "drunk-drink-a-dex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD974BBA13D9BFF000B12572 /* Debug */,
+				DD974BBB13D9BFF000B12572 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DD974BBC13D9BFF000B12572 /* Build configuration list for PBXNativeTarget "drunk-drink-a-dexTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD974BBD13D9BFF000B12572 /* Debug */,
+				DD974BBE13D9BFF000B12572 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DD974B8F13D9BFEF00B12572 /* drunk_drink_a_dex.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DD974B9013D9BFEF00B12572 /* drunk_drink_a_dex.xcdatamodel */,
+			);
+			currentVersion = DD974B9013D9BFEF00B12572 /* drunk_drink_a_dex.xcdatamodel */;
+			path = drunk_drink_a_dex.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DD974B6E13D9BFEF00B12572 /* Project object */;
+}
