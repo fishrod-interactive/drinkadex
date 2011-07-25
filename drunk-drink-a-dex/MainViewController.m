@@ -8,20 +8,23 @@
 
 #import "MainViewController.h"
 
+typedef enum {
+	FRSPIRITSSCROLLVIEW,
+	FRMIXERSCROLLVIEW
+} FRSCROLLVIEW;
+
 @implementation MainViewController
 
 @synthesize managedObjectContext = _managedObjectContext;
 @synthesize spiritsView = _spiritsView;
 @synthesize mixerView = _mixerView;
 @synthesize information = _information;
-
+@synthesize andView = _andView;
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
-    
-    [self becomeFirstResponder];
-    
+        
     
     [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:YES];
     
@@ -35,21 +38,24 @@
 	// Set up the views
 	self.spiritsView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.height, (self.view.frame.size.width / 2))];
 	self.spiritsView.showsVerticalScrollIndicator = NO;
+	self.spiritsView.showsHorizontalScrollIndicator = NO;
 	self.spiritsView.bounces = YES;
 	self.spiritsView.pagingEnabled = YES;
 	self.spiritsView.scrollEnabled = YES;
 	self.spiritsView.alwaysBounceHorizontal = YES;
+	self.spiritsView.tag = FRSPIRITSSCROLLVIEW;
 	
 	self.mixerView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, (self.view.frame.size.width / 2), self.view.frame.size.height, (self.view.frame.size.width / 2))];
 	self.mixerView.showsVerticalScrollIndicator = NO;
+	self.mixerView.showsHorizontalScrollIndicator = NO;
 	self.mixerView.bounces = YES;
 	self.mixerView.pagingEnabled = YES;
 	self.mixerView.scrollEnabled = YES;
 	self.mixerView.alwaysBounceHorizontal = YES;
+	self.mixerView.tag = FRMIXERSCROLLVIEW;
 	
-	spirits = [[NSArray alloc] initWithObjects:@"Vodka", @"Brandy", @"Whisky", @"Southern Comfort", @"Gin", @"White Rum", @"Dark Rum", @"Just A", @"Jagermeister", nil];
-	
-	mixers = [[NSArray alloc] initWithObjects:@"Coke", @"Diet Coke", @"Lemonade", @"Orange Juice", @"Milk", @"Cranberry Juice", @"Pineapple Juice", @"Tonic", @"Mango", @"Ice", @"Red Bull", nil];
+	spirits = [[NSArray alloc] initWithObjects:@"Brandy", @"Dark Rum", @"Gin", @"Jagermeister", @"Just A", @"Southern Comfort", @"Vodka", @"Whisky", @"White Rum", nil];
+	mixers = [[NSArray alloc] initWithObjects:@"Coke", @"Cranberry Juice", @"Diet Coke", @"Ice", @"Lemonade", @"Mango Juice", @"Orange Juice", @"Pineapple Juice", @"Red Bull", @"Tonic", nil];
 	
 	CGSize size = CGSizeMake(480, [self.spiritsView frame].size.height);
 	
@@ -120,29 +126,97 @@
 		
 	}
 	
-	
+	[self.spiritsView setDelegate:self];
+	[self.mixerView setDelegate:self];
 	
 	[self.view addSubview:self.spiritsView];
 	[self.view addSubview:self.mixerView];
 	
     UIImage *image = [UIImage imageNamed:@"and"];
-    UIImageView *imageview = [[UIImageView alloc] initWithImage:image];
+    self.andView = [[UIImageView alloc] initWithImage:image];
     
-    [imageview setCenter:CGPointMake((self.view.frame.size.height / 2), (self.view.frame.size.width / 2))];
+    [self.andView setCenter:CGPointMake((self.view.frame.size.height / 2), (self.view.frame.size.width / 2))];
     
-    [self.view addSubview:imageview];
-    
-    [imageview release];
+    [self.view addSubview:self.andView];
     
     [self.view bringSubviewToFront:_information];
     
     [super viewDidLoad];
+	
+	[self randomise];
+	
 }
 
- 
+- (void) hideAmphersand {
+	[UIView beginAnimations:@"fade" context:nil];
+	self.andView.alpha = 0;
+	[UIView commitAnimations];
+}
+
+- (void) showAmphersand {
+	[UIView beginAnimations:@"fade" context:nil];
+	self.andView.alpha = 1;
+	[UIView commitAnimations];
+}
+
+- (void) showHideArrowsForView:(UIScrollView *) scrollView withIndex :(int)index {
+	if(scrollView.tag == FRMIXERSCROLLVIEW){
+		if(index >= ([mixers count] - 1)){
+			// Hide the more than icon
+		} else if (index == 0){
+			// Hide the less then icon
+		} else {
+			// Show both icons
+		}
+	} else if (scrollView.tag == FRSPIRITSSCROLLVIEW) {
+		if(index > [spirits count]){
+			// Hide the more than icon
+		} else if (index == 0){
+			// Hide the less than icon
+		} else {
+			// Show both icons
+		}
+	}
+}
+
+- (void) didFinishScrolling:(UIScrollView *) scrollView {
+		
+	int index = (scrollView.contentOffset.x / scrollView.frame.size.width);
+	
+	[self showHideArrowsForView:scrollView withIndex:index];
+	
+	switch (scrollView.tag) {
+		case FRSPIRITSSCROLLVIEW: {
+			if(index == 4){
+				[self hideAmphersand];
+			} else {
+				[self showAmphersand];
+			}
+			break;
+		}
+		case FRMIXERSCROLLVIEW: {
+			
+			break;
+		}
+	}
+}
+
+- (void) scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+	[self didFinishScrolling:scrollView];
+}
+
+- (void) scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView {
+	[self didFinishScrolling:scrollView];	
+}
+
 - (void)flipsideViewControllerDidFinish:(FlipsideViewController *)controller
 {
     [self dismissModalViewControllerAnimated:YES];
+}
+
+- (void) viewDidAppear:(BOOL)animated {
+	[self becomeFirstResponder];
+	[super viewDidAppear:animated];
 }
 
 - (IBAction)showInfo:(id)sender
@@ -160,17 +234,30 @@
 
 }
 
+- (void) motionCancelled:(UIEventSubtype)motion withEvent:(UIEvent *)event {
+	
+}
+
 - (void) randomise {
-    int d = random() % [spirits count];
-    
-    CGRect frame = self.spiritsView.frame;
-    frame.origin.x = frame.size.width * d;
-    frame.origin.y = 0;
-    [self.spiritsView scrollRectToVisible:frame animated:YES];
+	
+	int d = random() % [spirits count];
+
+	CGRect frame = self.spiritsView.frame;
+	frame.origin.x = frame.size.width * d;
+	frame.origin.y = 0;
+	[self.spiritsView scrollRectToVisible:frame animated:YES];
+
+	d = random() % [mixers count];
+
+	frame = self.mixerView.frame;
+	frame.origin.x = frame.size.width * d;
+	frame.origin.y = 0;
+	[self.mixerView scrollRectToVisible:frame animated:YES];
+
 }
 
 - (void) motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event {
-    if(event.subtype == UIEventSubtypeMotionShake){
+    if(motion == UIEventSubtypeMotionShake){
         [self randomise];
     }
 }
@@ -195,6 +282,7 @@
 
 - (void)viewDidUnload
 {
+	[self setAndView:nil];
     [self setSpiritsView:nil];
 	[self setMixerView:nil];
     [self setInformation:nil];
@@ -206,6 +294,7 @@
 
 - (void)dealloc
 {
+	[_andView release];
 	[_managedObjectContext release];
     [_spiritsView release];
 	[_mixerView release];

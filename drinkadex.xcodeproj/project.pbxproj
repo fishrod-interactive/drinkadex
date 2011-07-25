@@ -55,15 +55,15 @@
 		B194E6DE13DDCC9900A19E80 /* and.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = and.png; sourceTree = "<group>"; };
 		B194E6DF13DDCC9900A19E80 /* and@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "and@2x.png"; sourceTree = "<group>"; };
 		B194E6E313DDCDE300A19E80 /* Raleway-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Thin.ttf"; sourceTree = "<group>"; };
-		DD974B7713D9BFEF00B12572 /* drunk-drink-a-dex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "drunk-drink-a-dex.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD974B7713D9BFEF00B12572 /* drinkadex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = drinkadex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD974B7B13D9BFEF00B12572 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DD974B7D13D9BFEF00B12572 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DD974B7F13D9BFEF00B12572 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		DD974B8113D9BFEF00B12572 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		DD974B8513D9BFEF00B12572 /* drunk-drink-a-dex-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "drunk-drink-a-dex-Info.plist"; sourceTree = "<group>"; };
+		DD974B8513D9BFEF00B12572 /* drinkadex-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "drinkadex-Info.plist"; sourceTree = "<group>"; };
 		DD974B8713D9BFEF00B12572 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DD974B8913D9BFEF00B12572 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		DD974B8B13D9BFEF00B12572 /* drunk-drink-a-dex-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "drunk-drink-a-dex-Prefix.pch"; sourceTree = "<group>"; };
+		DD974B8B13D9BFEF00B12572 /* drinkadex-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "drinkadex-Prefix.pch"; sourceTree = "<group>"; };
 		DD974B8C13D9BFEF00B12572 /* drunk_drink_a_dexAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = drunk_drink_a_dexAppDelegate.h; sourceTree = "<group>"; };
 		DD974B8D13D9BFEF00B12572 /* drunk_drink_a_dexAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = drunk_drink_a_dexAppDelegate.m; sourceTree = "<group>"; };
 		DD974B9013D9BFEF00B12572 /* drunk_drink_a_dex.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = drunk_drink_a_dex.xcdatamodel; sourceTree = "<group>"; };
@@ -74,9 +74,9 @@
 		DD974B9A13D9BFEF00B12572 /* FlipsideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlipsideViewController.h; sourceTree = "<group>"; };
 		DD974B9B13D9BFEF00B12572 /* FlipsideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlipsideViewController.m; sourceTree = "<group>"; };
 		DD974B9D13D9BFF000B12572 /* FlipsideView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlipsideView.xib; sourceTree = "<group>"; };
-		DD974BA413D9BFF000B12572 /* drunk-drink-a-dexTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "drunk-drink-a-dexTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD974BA413D9BFF000B12572 /* drinkadexTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = drinkadexTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD974BA513D9BFF000B12572 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		DD974BAF13D9BFF000B12572 /* drunk-drink-a-dexTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "drunk-drink-a-dexTests-Info.plist"; sourceTree = "<group>"; };
+		DD974BAF13D9BFF000B12572 /* drinkadexTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "drinkadexTests-Info.plist"; sourceTree = "<group>"; };
 		DD974BB113D9BFF000B12572 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DD974BB313D9BFF000B12572 /* drunk_drink_a_dexTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = drunk_drink_a_dexTests.h; sourceTree = "<group>"; };
 		DD974BB513D9BFF000B12572 /* drunk_drink_a_dexTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = drunk_drink_a_dexTests.m; sourceTree = "<group>"; };
@@ -143,8 +143,8 @@
 		DD974B7813D9BFEF00B12572 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DD974B7713D9BFEF00B12572 /* drunk-drink-a-dex.app */,
-				DD974BA413D9BFF000B12572 /* drunk-drink-a-dexTests.octest */,
+				DD974B7713D9BFEF00B12572 /* drinkadex.app */,
+				DD974BA413D9BFF000B12572 /* drinkadexTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -184,10 +184,10 @@
 			children = (
 				B194E6E213DDCDD500A19E80 /* Fonts */,
 				B194E6CD13DDC4A100A19E80 /* Images */,
-				DD974B8513D9BFEF00B12572 /* drunk-drink-a-dex-Info.plist */,
+				DD974B8513D9BFEF00B12572 /* drinkadex-Info.plist */,
 				DD974B8613D9BFEF00B12572 /* InfoPlist.strings */,
 				DD974B8913D9BFEF00B12572 /* main.m */,
-				DD974B8B13D9BFEF00B12572 /* drunk-drink-a-dex-Prefix.pch */,
+				DD974B8B13D9BFEF00B12572 /* drinkadex-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -205,7 +205,7 @@
 		DD974BAE13D9BFF000B12572 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				DD974BAF13D9BFF000B12572 /* drunk-drink-a-dexTests-Info.plist */,
+				DD974BAF13D9BFF000B12572 /* drinkadexTests-Info.plist */,
 				DD974BB013D9BFF000B12572 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -214,9 +214,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DD974B7613D9BFEF00B12572 /* drunk-drink-a-dex */ = {
+		DD974B7613D9BFEF00B12572 /* drinkadex */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DD974BB913D9BFF000B12572 /* Build configuration list for PBXNativeTarget "drunk-drink-a-dex" */;
+			buildConfigurationList = DD974BB913D9BFF000B12572 /* Build configuration list for PBXNativeTarget "drinkadex" */;
 			buildPhases = (
 				DD974B7313D9BFEF00B12572 /* Sources */,
 				DD974B7413D9BFEF00B12572 /* Frameworks */,
@@ -226,14 +226,14 @@
 			);
 			dependencies = (
 			);
-			name = "drunk-drink-a-dex";
+			name = drinkadex;
 			productName = "drunk-drink-a-dex";
-			productReference = DD974B7713D9BFEF00B12572 /* drunk-drink-a-dex.app */;
+			productReference = DD974B7713D9BFEF00B12572 /* drinkadex.app */;
 			productType = "com.apple.product-type.application";
 		};
-		DD974BA313D9BFF000B12572 /* drunk-drink-a-dexTests */ = {
+		DD974BA313D9BFF000B12572 /* drinkadexTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DD974BBC13D9BFF000B12572 /* Build configuration list for PBXNativeTarget "drunk-drink-a-dexTests" */;
+			buildConfigurationList = DD974BBC13D9BFF000B12572 /* Build configuration list for PBXNativeTarget "drinkadexTests" */;
 			buildPhases = (
 				DD974B9F13D9BFF000B12572 /* Sources */,
 				DD974BA013D9BFF000B12572 /* Frameworks */,
@@ -245,9 +245,9 @@
 			dependencies = (
 				DD974BAC13D9BFF000B12572 /* PBXTargetDependency */,
 			);
-			name = "drunk-drink-a-dexTests";
+			name = drinkadexTests;
 			productName = "drunk-drink-a-dexTests";
-			productReference = DD974BA413D9BFF000B12572 /* drunk-drink-a-dexTests.octest */;
+			productReference = DD974BA413D9BFF000B12572 /* drinkadexTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -255,7 +255,7 @@
 /* Begin PBXProject section */
 		DD974B6E13D9BFEF00B12572 /* Project object */ = {
 			isa = PBXProject;
-			buildConfigurationList = DD974B7113D9BFEF00B12572 /* Build configuration list for PBXProject "drunk-drink-a-dex" */;
+			buildConfigurationList = DD974B7113D9BFEF00B12572 /* Build configuration list for PBXProject "drinkadex" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -267,8 +267,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DD974B7613D9BFEF00B12572 /* drunk-drink-a-dex */,
-				DD974BA313D9BFF000B12572 /* drunk-drink-a-dexTests */,
+				DD974B7613D9BFEF00B12572 /* drinkadex */,
+				DD974BA313D9BFF000B12572 /* drinkadexTests */,
 			);
 		};
 /* End PBXProject section */
@@ -345,7 +345,7 @@
 /* Begin PBXTargetDependency section */
 		DD974BAC13D9BFF000B12572 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DD974B7613D9BFEF00B12572 /* drunk-drink-a-dex */;
+			target = DD974B7613D9BFEF00B12572 /* drinkadex */;
 			targetProxy = DD974BAB13D9BFF000B12572 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -383,6 +383,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -398,6 +399,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -407,6 +409,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: fishrod";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -416,6 +419,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "68BED77C-FCC3-4CB1-9047-0BFB4F8F8BEC";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -425,9 +429,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "drunk-drink-a-dex/drunk-drink-a-dex-Prefix.pch";
-				INFOPLIST_FILE = "drunk-drink-a-dex/drunk-drink-a-dex-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "drunk-drink-a-dex/drinkadex-Prefix.pch";
+				INFOPLIST_FILE = "drunk-drink-a-dex/drinkadex-Info.plist";
+				PRODUCT_NAME = drinkadex;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -436,9 +440,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "drunk-drink-a-dex/drunk-drink-a-dex-Prefix.pch";
-				INFOPLIST_FILE = "drunk-drink-a-dex/drunk-drink-a-dex-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "drunk-drink-a-dex/drinkadex-Prefix.pch";
+				INFOPLIST_FILE = "drunk-drink-a-dex/drinkadex-Info.plist";
+				PRODUCT_NAME = drinkadex;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -453,8 +457,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "drunk-drink-a-dex/drunk-drink-a-dex-Prefix.pch";
-				INFOPLIST_FILE = "drunk-drink-a-dexTests/drunk-drink-a-dexTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "drunk-drink-a-dexTests/drinkadexTests-Info.plist";
+				PRODUCT_NAME = drinkadexTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -470,8 +474,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "drunk-drink-a-dex/drunk-drink-a-dex-Prefix.pch";
-				INFOPLIST_FILE = "drunk-drink-a-dexTests/drunk-drink-a-dexTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "drunk-drink-a-dexTests/drinkadexTests-Info.plist";
+				PRODUCT_NAME = drinkadexTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -480,7 +484,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DD974B7113D9BFEF00B12572 /* Build configuration list for PBXProject "drunk-drink-a-dex" */ = {
+		DD974B7113D9BFEF00B12572 /* Build configuration list for PBXProject "drinkadex" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DD974BB713D9BFF000B12572 /* Debug */,
@@ -489,7 +493,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DD974BB913D9BFF000B12572 /* Build configuration list for PBXNativeTarget "drunk-drink-a-dex" */ = {
+		DD974BB913D9BFF000B12572 /* Build configuration list for PBXNativeTarget "drinkadex" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DD974BBA13D9BFF000B12572 /* Debug */,
@@ -498,7 +502,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DD974BBC13D9BFF000B12572 /* Build configuration list for PBXNativeTarget "drunk-drink-a-dexTests" */ = {
+		DD974BBC13D9BFF000B12572 /* Build configuration list for PBXNativeTarget "drinkadexTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DD974BBD13D9BFF000B12572 /* Debug */,
