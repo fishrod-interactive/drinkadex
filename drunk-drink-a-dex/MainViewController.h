@@ -7,13 +7,21 @@
 //
 
 #import "FlipsideViewController.h"
-
 #import <CoreData/CoreData.h>
 
-@interface MainViewController : UIViewController <FlipsideViewControllerDelegate>
+@interface MainViewController : UIViewController <FlipsideViewControllerDelegate> {
+	UIScrollView *_spiritsView;
+	UIScrollView *_mixerView;
+	
+	NSArray *spirits;
+	NSArray *mixers;
+}
+
 
 - (IBAction)showInfo:(id)sender;
 
 @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
+@property (nonatomic, retain) IBOutlet UIScrollView *spiritsView;
+@property (nonatomic, retain) IBOutlet UIScrollView *mixerView;
 
 @end
