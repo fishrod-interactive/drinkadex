@@ -12,6 +12,7 @@
 @interface MainViewController : UIViewController <FlipsideViewControllerDelegate> {
 	UIScrollView *_spiritsView;
 	UIScrollView *_mixerView;
+    UIButton *_information;
 	
 	NSArray *spirits;
 	NSArray *mixers;
@@ -19,9 +20,11 @@
 
 
 - (IBAction)showInfo:(id)sender;
+- (void) randomise;
 
 @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
 @property (nonatomic, retain) IBOutlet UIScrollView *spiritsView;
 @property (nonatomic, retain) IBOutlet UIScrollView *mixerView;
+@property (nonatomic, retain) IBOutlet UIButton *information;
 
 @end

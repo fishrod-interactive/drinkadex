@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B194E6C913DDC34100A19E80 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B194E6C813DDC34100A19E80 /* Default@2x.png */; };
+		B194E6CC13DDC3BD00A19E80 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B194E6CB13DDC3BD00A19E80 /* Default.png */; };
+		B194E6DC13DDCC9100A19E80 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = B194E6DA13DDCC9100A19E80 /* background.png */; };
+		B194E6DD13DDCC9100A19E80 /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B194E6DB13DDCC9100A19E80 /* background@2x.png */; };
+		B194E6E013DDCC9900A19E80 /* and.png in Resources */ = {isa = PBXBuildFile; fileRef = B194E6DE13DDCC9900A19E80 /* and.png */; };
+		B194E6E113DDCC9900A19E80 /* and@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B194E6DF13DDCC9900A19E80 /* and@2x.png */; };
+		B194E6E413DDCDE300A19E80 /* Raleway-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B194E6E313DDCDE300A19E80 /* Raleway-Thin.ttf */; };
 		DD974B7C13D9BFEF00B12572 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD974B7B13D9BFEF00B12572 /* UIKit.framework */; };
 		DD974B7E13D9BFEF00B12572 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD974B7D13D9BFEF00B12572 /* Foundation.framework */; };
 		DD974B8013D9BFEF00B12572 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD974B7F13D9BFEF00B12572 /* CoreGraphics.framework */; };
@@ -41,6 +48,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B194E6C813DDC34100A19E80 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
+		B194E6CB13DDC3BD00A19E80 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
+		B194E6DA13DDCC9100A19E80 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		B194E6DB13DDCC9100A19E80 /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x.png"; sourceTree = "<group>"; };
+		B194E6DE13DDCC9900A19E80 /* and.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = and.png; sourceTree = "<group>"; };
+		B194E6DF13DDCC9900A19E80 /* and@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "and@2x.png"; sourceTree = "<group>"; };
+		B194E6E313DDCDE300A19E80 /* Raleway-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Thin.ttf"; sourceTree = "<group>"; };
 		DD974B7713D9BFEF00B12572 /* drunk-drink-a-dex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "drunk-drink-a-dex.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD974B7B13D9BFEF00B12572 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DD974B7D13D9BFEF00B12572 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -95,6 +109,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B194E6CD13DDC4A100A19E80 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				B194E6DE13DDCC9900A19E80 /* and.png */,
+				B194E6DF13DDCC9900A19E80 /* and@2x.png */,
+				B194E6DA13DDCC9100A19E80 /* background.png */,
+				B194E6DB13DDCC9100A19E80 /* background@2x.png */,
+				B194E6CB13DDC3BD00A19E80 /* Default.png */,
+				B194E6C813DDC34100A19E80 /* Default@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		B194E6E213DDCDD500A19E80 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B194E6E313DDCDE300A19E80 /* Raleway-Thin.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
 		DD974B6C13D9BFEF00B12572 = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +182,8 @@
 		DD974B8413D9BFEF00B12572 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B194E6E213DDCDD500A19E80 /* Fonts */,
+				B194E6CD13DDC4A100A19E80 /* Images */,
 				DD974B8513D9BFEF00B12572 /* drunk-drink-a-dex-Info.plist */,
 				DD974B8613D9BFEF00B12572 /* InfoPlist.strings */,
 				DD974B8913D9BFEF00B12572 /* main.m */,
@@ -245,6 +282,13 @@
 				DD974B9413D9BFEF00B12572 /* MainWindow.xib in Resources */,
 				DD974B9913D9BFEF00B12572 /* MainView.xib in Resources */,
 				DD974B9E13D9BFF000B12572 /* FlipsideView.xib in Resources */,
+				B194E6C913DDC34100A19E80 /* Default@2x.png in Resources */,
+				B194E6CC13DDC3BD00A19E80 /* Default.png in Resources */,
+				B194E6DC13DDCC9100A19E80 /* background.png in Resources */,
+				B194E6DD13DDCC9100A19E80 /* background@2x.png in Resources */,
+				B194E6E013DDCC9900A19E80 /* and.png in Resources */,
+				B194E6E113DDCC9900A19E80 /* and@2x.png in Resources */,
+				B194E6E413DDCDE300A19E80 /* Raleway-Thin.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,6 +496,7 @@
 				DD974BBB13D9BFF000B12572 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DD974BBC13D9BFF000B12572 /* Build configuration list for PBXNativeTarget "drunk-drink-a-dexTests" */ = {
 			isa = XCConfigurationList;
@@ -460,6 +505,7 @@
 				DD974BBE13D9BFF000B12572 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
