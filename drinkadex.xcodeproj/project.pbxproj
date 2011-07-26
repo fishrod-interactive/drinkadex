@@ -69,8 +69,8 @@
 		B194E6E313DDCDE300A19E80 /* Raleway-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Thin.ttf"; sourceTree = "<group>"; };
 		B1B2038313DED41700E85ADA /* 57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 57.png; sourceTree = "<group>"; };
 		B1B2038413DED41700E85ADA /* 114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 114.png; sourceTree = "<group>"; };
-		B1B2038713DED42000E85ADA /* 57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 57.png; sourceTree = "<group>"; };
-		B1B2038913DED42900E85ADA /* 114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 114.png; sourceTree = "<group>"; };
+		B1B2038713DED42000E85ADA /* 57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 57.png; path = ../57.png; sourceTree = "<group>"; };
+		B1B2038913DED42900E85ADA /* 114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 114.png; path = ../114.png; sourceTree = "<group>"; };
 		B1B2038B13DED4D000E85ADA /* right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right.png; sourceTree = "<group>"; };
 		B1B2038C13DED4D000E85ADA /* left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = left.png; sourceTree = "<group>"; };
 		B1B2038D13DED4D100E85ADA /* left@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "left@2x.png"; sourceTree = "<group>"; };
@@ -174,8 +174,6 @@
 		DD974B6C13D9BFEF00B12572 = {
 			isa = PBXGroup;
 			children = (
-				B1B2038913DED42900E85ADA /* 114.png */,
-				B1B2038713DED42000E85ADA /* 57.png */,
 				DD974B8313D9BFEF00B12572 /* drunk-drink-a-dex */,
 				DD974BAD13D9BFF000B12572 /* drunk-drink-a-dexTests */,
 				DD974B7A13D9BFEF00B12572 /* Frameworks */,
@@ -227,6 +225,8 @@
 		DD974B8413D9BFEF00B12572 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B1B2038913DED42900E85ADA /* 114.png */,
+				B1B2038713DED42000E85ADA /* 57.png */,
 				B1B2039313DF020100E85ADA /* Sounds */,
 				B194E6E213DDCDD500A19E80 /* Fonts */,
 				B194E6CD13DDC4A100A19E80 /* Images */,
@@ -495,10 +495,14 @@
 		DD974BBB13D9BFF000B12572 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "drunk-drink-a-dex/drinkadex-Prefix.pch";
 				INFOPLIST_FILE = "drunk-drink-a-dex/drinkadex-Info.plist";
 				PRODUCT_NAME = drinkadex;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

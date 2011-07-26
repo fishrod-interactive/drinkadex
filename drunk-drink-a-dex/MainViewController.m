@@ -67,7 +67,7 @@ typedef enum {
 	self.mixerView.tag = FRMIXERSCROLLVIEW;
 	
 	spirits = [[NSArray alloc] initWithObjects:@"Brandy", @"Dark Rum", @"Gin", @"Jagermeister", @"Just A", @"Southern Comfort", @"Vodka", @"Whisky", @"White Rum", nil];
-	mixers = [[NSArray alloc] initWithObjects:@"Coke", @"Cranberry Juice", @"Diet Coke", @"Ice", @"Lemonade", @"Mango Juice", @"Milk", @"Orange Juice", @"Pineapple Juice", @"Red Bull", @"Tonic", nil];
+	mixers = [[NSArray alloc] initWithObjects:@"Coke", @"Cranberry Juice", @"Diet Coke", @"Ice", @"Lemonade", @"Mango Juice", @"Orange Juice", @"Pineapple Juice", @"Red Bull", @"Tonic", nil];
 	
 	CGSize size = CGSizeMake(480, [self.spiritsView frame].size.height);
 	
@@ -346,6 +346,8 @@ typedef enum {
 - (void)viewDidUnload
 {
 	[self setAndView:nil];
+    [self setRightTopView:nil];
+    [self setRightBottomView:nil];
     [self setLeftTopView:nil];
     [self setLeftBottomView:nil];
     [self setSpiritsView:nil];
@@ -359,8 +361,12 @@ typedef enum {
 
 - (void)dealloc
 {
+    [spirits release];
+    [mixers release];
     [player release];
 	[_andView release];
+    [_rightTopView release];
+    [_rightBottomView release];
     [_leftTopView release];
     [_leftBottomView release];
 	[_managedObjectContext release];

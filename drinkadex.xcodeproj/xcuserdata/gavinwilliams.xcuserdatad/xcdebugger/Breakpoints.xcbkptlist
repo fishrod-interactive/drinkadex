@@ -14,8 +14,8 @@
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "234"
          endingLineNumber = "234"
-         landmarkName = "-showHideArrowsForView::"
-         landmarkType = "5">
+         landmarkName = "@implementation MainViewController"
+         landmarkType = "3">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "No"
@@ -28,7 +28,7 @@
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "219"
          endingLineNumber = "219"
-         landmarkName = "-showHideArrowsForView::"
+         landmarkName = "-showHideArrowsForView:withIndex:"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
@@ -42,7 +42,7 @@
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "238"
          endingLineNumber = "238"
-         landmarkName = "-showHideArrowsForView::"
+         landmarkName = "-didFinishScrolling:"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>
