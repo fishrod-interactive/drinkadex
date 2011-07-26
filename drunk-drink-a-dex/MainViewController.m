@@ -20,14 +20,26 @@ typedef enum {
 @synthesize mixerView = _mixerView;
 @synthesize information = _information;
 @synthesize andView = _andView;
+@synthesize leftTopView = _leftTopView;
+@synthesize leftBottomView = _leftBottomView;
+@synthesize rightTopView = _rightTopView;
+@synthesize rightBottomView = _rightBottomView;
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
-        
+
+    NSURL *filepath = [[NSURL alloc] initFileURLWithPath:[[NSBundle mainBundle] pathForResource:@"secrettrack" ofType:@"wav"]];
+    
+    NSError *error = nil;
+    
+    player = [[AVAudioPlayer alloc] initWithContentsOfURL:filepath error:&error];
+    [player setDelegate:self];
+    [filepath release];
     
     [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:YES];
-    
+    shakes = 0;
+    maxshakes = 5;
     // Create backgrounds
     UIImage *background = [UIImage imageNamed:@"background"];
     UIImageView *backgroundview = [[UIImageView alloc] initWithImage:background];
@@ -55,7 +67,7 @@ typedef enum {
 	self.mixerView.tag = FRMIXERSCROLLVIEW;
 	
 	spirits = [[NSArray alloc] initWithObjects:@"Brandy", @"Dark Rum", @"Gin", @"Jagermeister", @"Just A", @"Southern Comfort", @"Vodka", @"Whisky", @"White Rum", nil];
-	mixers = [[NSArray alloc] initWithObjects:@"Coke", @"Cranberry Juice", @"Diet Coke", @"Ice", @"Lemonade", @"Mango Juice", @"Orange Juice", @"Pineapple Juice", @"Red Bull", @"Tonic", nil];
+	mixers = [[NSArray alloc] initWithObjects:@"Coke", @"Cranberry Juice", @"Diet Coke", @"Ice", @"Lemonade", @"Mango Juice", @"Milk", @"Orange Juice", @"Pineapple Juice", @"Red Bull", @"Tonic", nil];
 	
 	CGSize size = CGSizeMake(480, [self.spiritsView frame].size.height);
 	
@@ -77,7 +89,7 @@ typedef enum {
         [spiritview setBackgroundColor:[UIColor colorWithWhite:0 alpha:0]];
 
 		UITextView *title = [[UITextView alloc] initWithFrame:frame];
-        [title setFrame:CGRectMake(0, 50, frame.size.width, frame.size.height)];
+        [title setFrame:CGRectMake(0, 53, frame.size.width, frame.size.height)];
 		title.editable = NO;
         [title setTextColor:[UIColor colorWithWhite:1 alpha:1]];
 		[title setText:name];
@@ -108,7 +120,7 @@ typedef enum {
         [mixerview setBackgroundColor:[UIColor colorWithWhite:0 alpha:0]];
 		
 		UITextView *title = [[UITextView alloc] initWithFrame:frame];
-        [title setFrame:CGRectMake(0, 50, frame.size.width, frame.size.height)];
+        [title setFrame:CGRectMake(0, 53, frame.size.width, frame.size.height)];
 		title.editable = NO;
         [title setTextColor:[UIColor colorWithWhite:1 alpha:1]];
 		[title setText:name];
@@ -131,13 +143,36 @@ typedef enum {
 	
 	[self.view addSubview:self.spiritsView];
 	[self.view addSubview:self.mixerView];
+    
 	
+    //create amphersand
     UIImage *image = [UIImage imageNamed:@"and"];
     self.andView = [[UIImageView alloc] initWithImage:image];
     
     [self.andView setCenter:CGPointMake((self.view.frame.size.height / 2), (self.view.frame.size.width / 2))];
     
     [self.view addSubview:self.andView];
+    
+    //create arrows
+    UIImage *leftImage = [UIImage imageNamed:@"left"];
+    self.leftTopView = [[UIImageView alloc] initWithImage:leftImage];
+    self.leftBottomView = [[UIImageView alloc] initWithImage:leftImage];
+    
+    UIImage *rightImage = [UIImage imageNamed:@"right"];
+    self.rightTopView = [[UIImageView alloc] initWithImage:rightImage];
+    self.rightBottomView = [[UIImageView alloc] initWithImage:rightImage];
+    
+    int offset = 20;
+    
+    [self.leftTopView setCenter:CGPointMake(offset, (self.view.frame.size.width / 4))];
+    [self.view addSubview:self.leftTopView];
+    [self.leftBottomView setCenter:CGPointMake(offset, ((self.view.frame.size.width / 4) + (self.view.frame.size.width / 2)))];
+    [self.view addSubview:self.leftBottomView];
+    
+    [self.rightTopView setCenter:CGPointMake((self.view.frame.size.height) - offset, (self.view.frame.size.width / 4))];
+    [self.view addSubview:self.rightTopView];
+    [self.rightBottomView setCenter:CGPointMake((self.view.frame.size.height) - offset, ((self.view.frame.size.width / 4) + (self.view.frame.size.width / 2)))];
+    [self.view addSubview:self.rightBottomView];
     
     [self.view bringSubviewToFront:_information];
     
@@ -162,19 +197,37 @@ typedef enum {
 - (void) showHideArrowsForView:(UIScrollView *) scrollView withIndex :(int)index {
 	if(scrollView.tag == FRMIXERSCROLLVIEW){
 		if(index >= ([mixers count] - 1)){
-			// Hide the more than icon
+			[UIView beginAnimations:@"fade" context:nil];
+            self.leftBottomView.alpha = 1;
+            self.rightBottomView.alpha = 0;
+            [UIView commitAnimations];
 		} else if (index == 0){
-			// Hide the less then icon
+			[UIView beginAnimations:@"fade" context:nil];
+            self.leftBottomView.alpha = 0;
+            self.rightBottomView.alpha = 1;
+            [UIView commitAnimations];
 		} else {
-			// Show both icons
+			[UIView beginAnimations:@"fade" context:nil];
+            self.leftBottomView.alpha = 1;
+            self.rightBottomView.alpha = 1;
+            [UIView commitAnimations];
 		}
 	} else if (scrollView.tag == FRSPIRITSSCROLLVIEW) {
-		if(index > [spirits count]){
-			// Hide the more than icon
+		if(index >= ([spirits count] - 1)){
+			[UIView beginAnimations:@"fade" context:nil];
+            self.leftTopView.alpha = 1;
+            self.rightTopView.alpha = 0;
+            [UIView commitAnimations];
 		} else if (index == 0){
-			// Hide the less than icon
+			[UIView beginAnimations:@"fade" context:nil];
+            self.leftTopView.alpha = 0;
+            self.rightTopView.alpha = 1;
+            [UIView commitAnimations];
 		} else {
-			// Show both icons
+			[UIView beginAnimations:@"fade" context:nil];
+            self.leftTopView.alpha = 1;
+            self.rightTopView.alpha = 1;
+            [UIView commitAnimations];
 		}
 	}
 }
@@ -238,6 +291,12 @@ typedef enum {
 	
 }
 
+- (void) playSong {
+    shakes = 0;
+    [player stop];
+    [player play];
+}
+
 - (void) randomise {
 	
 	int d = random() % [spirits count];
@@ -259,6 +318,10 @@ typedef enum {
 - (void) motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event {
     if(motion == UIEventSubtypeMotionShake){
         [self randomise];
+        shakes++;
+        if(shakes == maxshakes){
+            [self playSong];
+        }
     }
 }
 
@@ -283,6 +346,8 @@ typedef enum {
 - (void)viewDidUnload
 {
 	[self setAndView:nil];
+    [self setLeftTopView:nil];
+    [self setLeftBottomView:nil];
     [self setSpiritsView:nil];
 	[self setMixerView:nil];
     [self setInformation:nil];
@@ -294,7 +359,10 @@ typedef enum {
 
 - (void)dealloc
 {
+    [player release];
 	[_andView release];
+    [_leftTopView release];
+    [_leftBottomView release];
 	[_managedObjectContext release];
     [_spiritsView release];
 	[_mixerView release];
